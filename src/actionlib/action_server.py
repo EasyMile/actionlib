@@ -35,13 +35,13 @@ import threading
 
 from actionlib_msgs.msg import *
 
-from goal_id_generator import GoalIDGenerator
-from status_tracker import StatusTracker
+from .goal_id_generator import GoalIDGenerator
+from .status_tracker import StatusTracker
 
-from handle_tracker_deleter import HandleTrackerDeleter
-from server_goal_handle import ServerGoalHandle
+from .handle_tracker_deleter import HandleTrackerDeleter
+from .server_goal_handle import ServerGoalHandle
 
-from actionlib.exceptions import *
+from .exceptions import *
 
 
 def nop_cb(goal_handle):
